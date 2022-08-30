@@ -20,11 +20,11 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
 
 1. In the Azure portal, select **&#65291; Create a resource** from the upper left-hand corner and search for *Azure Database for MySQL*. Then in the resulting **Azure Database for MySQL** page, select **Create**.
 
-1. Review the Azure Database for MySQL options that are available, leave **Resource type** as  and select **Create**.
+1. Review the Azure Database for MySQL options that are available, note the **Resource type** and select **Create**.
 
     ![Screenshot of Azure Database for MySQL deployment options](images/mysql-options.png)
 
-1. Enter the following values on the **Create SQL Database** page:
+1. Enter the following values on the **Flexible server** page:
     - **Subscription**: Select your Azure subscription.
     - **Resource group**: Create a new resource group with a name of your choice.
     - **Server name**: Enter a unique name.
@@ -37,11 +37,11 @@ In this exercise, you'll provision an Azure Database for MySQL resource.
     - **Admin username**: Your name
     - **Password** and **Confirm password**: A suitably complex password
 
-1. Select **Next: Networking**.
+1. Select **Next : Networking**.
 
-1. Under **Firewall rules**, select **&#65291; Add current client IP address**.
+1. Under **Firewall rules**, select **&#65291; Add current client IP address (*xxx.xxx.xxx.xxx*)**.
 
-1. Select **Review + Create**, and then select **Create** to create your Azure MySQL database.
+1. Select **Review + create**, and then select **Create** to create your Azure MySQL database.
 
 1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
 
