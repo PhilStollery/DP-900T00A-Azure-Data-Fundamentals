@@ -28,9 +28,9 @@ The first step in using Azure Storage is to provision an Azure Storage account i
     - **Performance**: *Standard*
     - **Redundancy**: *Locally-redundant storage (LRS)*
 
-1. Select **Next: Advanced >** and view the advanced configuration options. In particular, note that this is where you can enable hierarchical namespace to support Azure Data Lake Storage Gen2. Leave this option **<u>unselected</u>** (you'll enable it later), and then select **Next: Networking >** to view the networking options for your storage account.
-1. Select **Next: Data protection >** and then in the **Recovery** section, <u>de</u>select all of the **Enable soft delete...** options. These options retain deleted files for subsequent recovery, but can cause issues later when you enable hierarchical namespace.
-1. Continue through the remaining **Next >** pages without changing any of the default settings, and then on the  **Review + Create** page, wait for your selections to be validated and select **Create** to create your Azure Storage account.
+1. Select **Next : Advanced >** and view the advanced configuration options. In particular, note that this is where you can enable hierarchical namespace to support Azure Data Lake Storage Gen2. Leave this option **<u>unselected</u>** (you'll enable it later), and then select **Next : Networking >** to view the networking options for your storage account.
+1. Select **Next : Data protection >** and then in the **Recovery** section, <u>de</u>select all of the **Enable soft delete...** options. These options retain deleted files for subsequent recovery, but can cause issues later when you enable hierarchical namespace.
+1. Continue through the remaining **Next >** pages without changing any of the default settings, and then on the  **Review** page, wait for your selections to be validated and select **Create** to create your Azure Storage account.
 1. Wait for deployment to complete. Then go to the resource that was deployed.
 
 ## Explore blob storage
@@ -44,7 +44,7 @@ Now that you have an Azure Storage account, you can create a container for blob 
 1. In the Azure portal page for your storage container, on the left side, in the **Data storage** section, select **Containers**.
 1. In the **Containers** page, select **&#65291; Container** and add a new container named **data** with a public access level of **Private (no anonymous access)**.
 1. When the **data** container has been created, verify that it's listed in the **Containers** page.
-1. In the pane on the left side, in the top section, select **Storage browser **. This page provides a browser-based interface that you can use to work with the data in your storage account.
+1. In the pane on the left side, in the top section, select **Storage browser**. This page provides a browser-based interface that you can use to work with the data in your storage account.
 1. In the storage browser page, select **Blob containers** and verify that your **data** container is listed.
 1. Select the **data** container, and note that it's empty.
 1. Select **&#65291; Add Directory** and read the information about folders before creating a new directory named **products**.
