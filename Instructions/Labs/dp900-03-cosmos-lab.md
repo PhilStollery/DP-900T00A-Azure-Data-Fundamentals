@@ -18,7 +18,9 @@ You'll need an [Azure subscription](https://azure.microsoft.com/free) in which y
 To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
 
 1. In the Azure portal, select **+ Create a resource** at the top left, and search for *Azure Cosmos DB*.  In the results, select **Azure Cosmos DB** and select  **Create**.
+
 1. In the **Core (SQL) - Recommended** tile, select **Create**.
+
 1. Enter the following details, and then select **Review + create**:
     - **Subscription**: If you're using a sandbox, select *Concierge Subscription*. Otherwise, select your Azure subscription.
     - **Resource group**:  If you're using a sandbox, select the existing resource group (which will have a name like *learn-xxxx...*). Otherwise, create a new resource group with a name of your choice.
@@ -27,7 +29,9 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
     - **Capacity mode**: Provisioned throughput
     - **Apply Free-Tier Discount**: Select Apply if available
     - **Limit total account throughput**: Unselected
+
 1. When the configuration has been validated, select **Create**.
+
 1. Wait for deployment to complete. Then go to the deployed resource.
 
 ## Create a sample database
@@ -35,15 +39,21 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 *Throughout this procedure, close any tips that are displayed in the portal*.
 
 1. On the page for your new Cosmos DB account, in the pane on the left, select **Data Explorer**.
+
 1. In the **Data Explorer** page, select **Launch quick start**.
+
 1. In the **New Container** tab, review the pre-populated settings for the sample database, and then select **OK**.
+
 1. Observe the status in the panel at the bottom of the screen until the **SampleDB** database and its **SampleContainer** container has been created (which may take a minute or so).
 
 ## View and create items
 
 1. In the Data Explorer page, expand the **SampleDB** database and the **SampleContainer** container, and select **Items** to see a list of items in the container. The items represent addresses, each with a unique id and other properties.
+
 1. Select any of the items in the list to see a JSON representation of the item data.
+
 1. At the top of the page, select **New Item** to create a new blank item.
+
 1. Modify the JSON for the new item as follows, and then select **Save**.
 
     ```json
@@ -58,8 +68,11 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 ## Query the database
 
 1. In the **Data Explorer** page, select the **New SQL Query** icon.
+
 1. In the SQL Query editor, review the default query (`SELECT * FROM c`) and use the **Execute Query** button to run it.
+
 1. Review the results, which includes the full JSON representation of all items.
+
 1. Modify the query as follows:
 
     ```sql
@@ -69,6 +82,7 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
     ```
 
 1. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with an **address** field containing the text "Any St.".
+
 1. Close the SQL Query editor, discarding your changes.
 
     You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
