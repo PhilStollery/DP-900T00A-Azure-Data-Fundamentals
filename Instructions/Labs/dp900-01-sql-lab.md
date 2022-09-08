@@ -31,15 +31,15 @@ You'll need an [Azure subscription](https://azure.microsoft.com/free) in which y
     - **Compute + storage**: Leave unchanged
     - **Backup storage redundancy**: *Locally-redundant backup storage*
 
-1. On the **Create SQL Database** page, select **Next :Networking >**, and on the **Networking** page, in the **Network connectivity** section, select **Public endpoint**. Then select **Yes** for both options in the **Firewall rules** section to allow access to your database server from Azure services and your current client IP address.
+1. On the **Create SQL Database** page, select **Next : Networking >**, and on the **Networking** page, in the **Network connectivity** section, select **Public endpoint**. Then select **Yes** for both options in the **Firewall rules** section to allow access to your database server from Azure services and your current client IP address.
 
-1. Select **Next: Security >** and set the **Enable Microsoft Defender for SQL** option to **Not now**.
+1. Select **Next : Security >** and set the **Enable Microsoft Defender for SQL** option to **Not now**.
 
-1. Select **Next: Additional Settings >** and on the **Additional settings** tab, set the **Use existing data** option to **Sample** (this will create a sample database that you can explore later).
+1. Select **Next : Additional Settings >** and on the **Additional settings** tab, set the **Use existing data** option to **Sample** (this will create a sample database that you can explore later), and then select **OK** to continue.
 
-1. Select **Review + Create**, and then select **Create** to create your Azure SQL database.
+1. Select **Review + create**, and then select **Create** to create your Azure SQL database.
 
-1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
+1. Wait for deployment to complete. Then go to the resource **Overview** page that was deployed, which should look like this:
 
     ![Screenshot of the Azure portal showing the SQL Database page.](images//sql-database-portal.png)
 
